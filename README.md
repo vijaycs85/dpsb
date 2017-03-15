@@ -22,6 +22,11 @@ Simply clone this repository and update `data/projects.csv` file with modules us
 ![Drupal Projects Status Board Screenshot](https://cloud.githubusercontent.com/assets/1220029/23928352/2de8a522-0917-11e7-863d-4479c909d0b5.png)
 
 
+## Demo
+
+Checkout [gh-pages](https://vijaycs85.github.io/dpsb/) of this repository.
+
+
 ## Contributors
 
 Feel free to open an [issue](https://github.com/vijaycs85/dpsb/issues/new) and/or [pull request](https://github.com/vijaycs85/dpsb/pulls) to improve, add new features and bug fixes. 
