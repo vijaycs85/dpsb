@@ -9,7 +9,7 @@ Drupal Projects Status Board is a way to monitor modules & themes used in your p
 
 ## Motivation
 
-Typical small/medium size Drupal projects have ~30 to 50 contributed modules and it is hard to know them all to validate around times like security updates and keep up with the development / new versions of them. It is certainly very helpful for managing multi site and multi environment situations.
+Typical small/medium size Drupal project has ~30 to 50 contributed modules and it is hard to know them all to validate around times like security updates and keep up with the development / new versions of them. It is certainly harder when managing more than one site.
 
 
 ## Installation
