@@ -1,0 +1,51 @@
+<html>
+<head>
+    <title>Drupal Projects Status Board</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.11.1/bootstrap-table.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.11.1/bootstrap-table.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.11.1/extensions/export/bootstrap-table-export.min.js"></script>
+    <script src="http://rawgit.com/hhurz/tableExport.jquery.plugin/master/tableExport.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-timeago/1.5.4/jquery.timeago.min.js"></script>
+    <script src="./js/versions.js"></script>
+</head>
+<body>
+<div class="container">
+    <h1>Drupal Projects Status Board</h1>
+
+    <nav>
+        <div class="alert alert-success" role="alert"><strong>Refreshed</strong> <strong data-field="updated"></strong> !!!</div>
+        <ul class="list-inline">
+            <li><span class="btn btn-danger btn-md"><span class="glyphicon glyphicon-lock"></span></span> No security cover</li>
+            <li><span class="btn btn-success btn-md"><span class="glyphicon glyphicon-lock"></span></span> Security cover</li>
+        </ul>
+    </nav>
+    <table id="table"
+           data-search="true"
+           data-show-refresh="true"
+           data-show-toggle="true"
+           data-show-columns="true"
+           data-show-export="true"
+           data-detail-view="true"
+           data-detail-formatter="detailFormatter"
+           data-minimum-count-columns="2"
+           data-show-footer="false"
+    >
+        <thead>
+        <tr>
+            <th data-field="details.list.0.title" data-formatter="ModuleFormatterUrl">MODULE</th>
+            <th data-field="versions" data-formatter="VersionFormatterUrl">VERSION</th>
+            <!--<th data-field="details.list.0.status" data-formatter="StatusFormatter">STATUS</th>-->
+            <th data-field="maintainers" data-formatter="LinkFormatterUrl">MAINTAINERS</th>
+        </tr>
+        </thead>
+    </table><br />
+    <p>
+
+    </p>
+</div>
+</body>
+</html>
