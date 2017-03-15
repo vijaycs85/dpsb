@@ -23,7 +23,7 @@ Simply clone this repository and update `data/projects.csv` file with modules us
 
 ## Demo
 
-Checkout [gh-pages](https://vijaycs85.github.io/dpsb/) of this repository for sample output. It is possible to get additional details as well. Check generated [metadata](https://vijaycs85.github.io/dpsb/project-metadata.json) file for additional details available.  
+Checkout [gh-pages](https://vijaycs85.github.io/dpsb/) of this repository for sample output. Check generated [metadata](https://vijaycs85.github.io/dpsb/project-metadata.json) file for additional details available.  
 
 
 ## Contributors
