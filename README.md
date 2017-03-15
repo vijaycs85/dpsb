@@ -1,6 +1,6 @@
 ## Synopsis
 
-Drupal Projects Status Board is a way to monitor modules & themes by generating metadata of them to keep up-to-date with them. We are using [APIs](https://www.drupal.org/drupalorg/docs/api) exposed by [Drupal.org](https://www.drupal.org)
+Drupal Projects Status Board is a way to monitor modules & themes used in your project. All data retrieved from [Drupal.org](https://www.drupal.org) using [APIs](https://www.drupal.org/drupalorg/docs/api).
 
 
 ## Design
@@ -9,8 +9,7 @@ Drupal Projects Status Board is a way to monitor modules & themes by generating 
 
 ## Motivation
 
-Typical small/medium size Drupal project has ~30 to 50 contributed modules and it's always hard to knowing all (times like when security updates come) & keep up with the development work of them.
-This page allows to know current status and also providing version used on a site, gives the latest version available in Drupal.org and used on a site. It certainly helps on multi-site and/or multi-environment projects.
+Typical small/medium size Drupal projects have ~30 to 50 contributed modules and it is hard to know them all to validate around times like security updates and keep up with the development / new versions of them. It is certainly very helpful for managing multi site and multi environment situations.
 
 
 ## Installation
@@ -24,12 +23,12 @@ Simply clone this repository and update `data/projects.csv` file with modules us
 
 ## Demo
 
-Checkout [gh-pages](https://vijaycs85.github.io/dpsb/) of this repository.
+Checkout [gh-pages](https://vijaycs85.github.io/dpsb/) of this repository for sample output. It is possible to get additional details as well. Check generated [metadata](https://vijaycs85.github.io/dpsb/project-metadata.json) file for additional details available.  
 
 
 ## Contributors
 
-Feel free to open an [issue](https://github.com/vijaycs85/dpsb/issues/new) and/or [pull request](https://github.com/vijaycs85/dpsb/pulls) to improve, add new features and bug fixes. 
+Feel free to open an [issue](https://github.com/vijaycs85/dpsb/issues/new) or [pull request](https://github.com/vijaycs85/dpsb/pulls) to improve, add new features and bug fixes.
 
 ## Future
 
