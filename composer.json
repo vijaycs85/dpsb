@@ -1,0 +1,14 @@
+{
+  "name": "vijaycs85/dpsb",
+  "description": "Checker",
+  "type": "project",
+  "license": "GPL-2.0+",
+  "require": {
+    "guzzlehttp/guzzle-services": "1.1.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Checker\\": "src"
+    }
+  }
+}
