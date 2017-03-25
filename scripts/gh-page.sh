@@ -29,7 +29,7 @@ rm -rf out/**/* || exit 0
 # Run our compile script
 php generate.php
 
-cp dest/* out/
+cp -rf dest/* out/
 
 # Now let's go have some fun with the cloned repo
 cd out
