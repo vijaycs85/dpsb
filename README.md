@@ -27,7 +27,7 @@ The projects CSV file provides list of projects to monitor. This can be generate
 ```
 
 Note:
-> The echo command is to add header to CSV. Makes sure the label/name field is represented as Project. The CSV can have addition fields(like version number) just to display on the table but make sure you are not adding them with reserved header keys (Maintainers, Versions, Details) and add the fields as <th> in index.html.
+> The echo command is to add header to CSV. Makes sure the label/name field is represented as Project. The CSV can have addition fields(like version number) just to display on the table but make sure you are not adding them with reserved header keys (Maintainers, Versions, Details) and add the fields as `<th>` in index.html.
 
 ## Screenshot
 
