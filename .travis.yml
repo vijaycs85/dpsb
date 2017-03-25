@@ -1,0 +1,7 @@
+script: bash ./scripts/gh-page.sh
+env:
+  global:
+  - ENCRYPTION_LABEL: b90b173a1858
+before_install:
+  - openssl aes-256-cbc -K $encrypted_b90b173a1858_key -iv $encrypted_b90b173a1858_iv
+  -in deploy_key.enc -out deploy_key -d
