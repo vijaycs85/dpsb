@@ -75,9 +75,20 @@ class DrupalOrgClient {
    * @param $core_version
    */
   public function getAdditionalData(array &$row, $core_version) {
+    $this->updateProjectMachineName($row);
     $row['details'] = $this->getProjectDetails(['field_project_machine_name' => $row['project']]);
     $row['maintainers'] = $this->getMaintainers(['project' => $row['project']]);
     $row['versions'] = $this->getVersions($row, $core_version);
+  }
+
+  /**
+   * Gets project machine name from Name (machine_name) format.
+   *
+   * @param array $row
+   *   An array of project data.
+   */
+  protected function updateProjectMachineName(&$row) {
+    $row['project'] = strtolower(preg_replace('/[^\(].*\(([^\)].*)\)/', '$1', $row['project']));
   }
 
   /**

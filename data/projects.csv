@@ -1,26 +1,15 @@
-Project,Maintainers
-ctools
-views
-token
-pathauto
-libraries
-entity
-jquery_update
-admin_menu
-webform
-date
-imce
-ckeditor
-google_analytics
-link
-wysiwyg
-metatag
-module_filter
-backup_migrate
-rules
-features
-xmlsitemap
-field_group
-entityreference
-media
-transliteration
+Project,Version
+Drupal,7.54-dev
+Bean (bean),7.x-1.11
+Brightcove Video Connect (brightcove),7.x-6.1
+Chaos tools (ctools),7.x-1.12
+Date (date),7.x-2.9
+Deployment (deploy),7.x-3.0-alpha1
+Entity API (entity),7.x-1.8
+Entity Dependency API (entity_dependency),7.x-1.0-alpha2
+File Entity (file_entity),7.x-2.0-beta3
+Libraries (libraries),7.x-2.3
+Services (services),7.x-3.19
+Token (token),7.x-1.7
+Universally Unique ID (uuid),7.x-1.0-beta2
+WF Base (wf),7.x-1.0-alpha2

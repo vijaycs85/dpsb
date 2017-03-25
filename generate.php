@@ -29,7 +29,8 @@ if (($handle = fopen($data_path . 'projects.csv', 'r')) !== FALSE) {
     }
     $row = [];
     foreach ($header as $index => $column) {
-      $row[strtolower($column)] = isset($line[$index]) ? $line[$index] : NULL;
+      $key = str_replace(' ', '_', strtolower($column));
+      $row[$key] = isset($line[$index]) ? $line[$index] : NULL;
     }
     $ts = time();
     $client->getAdditionalData($row, $conf['core']);
