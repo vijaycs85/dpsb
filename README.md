@@ -31,21 +31,17 @@ Note:
 
 ## Screenshot
 
-![Drupal Projects Status Board Screenshot](https://cloud.githubusercontent.com/assets/1220029/23928352/2de8a522-0917-11e7-863d-4479c909d0b5.png)
+![Drupal Projects Status Board Screenshot](https://cloud.githubusercontent.com/assets/1220029/24326705/3d97dfea-11ac-11e7-88a4-8c25ccd7383d.png)
 
 
 ## Demo
 
-Checkout [gh-pages](https://vijaycs85.github.io/dpsb/) of this repository for sample output. Check generated [metadata](https://vijaycs85.github.io/dpsb/project-metadata.json) file for additional details available.  
-
+Checkout [gh-pages](https://vijaycs85.github.io/dpsb/) of this repository for sample output. Check generated [metadata](https://vijaycs85.github.io/dpsb/project-metadata.json) file for additional details available. Integrated with [TravisCI](https://travis-ci.org/vijaycs85/dpsb) to refresh daily and every push to master.
 
 ## Contributors
 
 Feel free to open an [issue](https://github.com/vijaycs85/dpsb/issues/new) or [pull request](https://github.com/vijaycs85/dpsb/pulls) to improve, add new features and bug fixes.
 
-## Future
-
-- Integrate with TravisCI/CircleCI to generate & commit assets to `gh-pages` branch automatically.
 
 ## License
 
