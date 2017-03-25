@@ -1,4 +1,9 @@
-script: bash ./scripts/gh-page.sh
 env:
   global:
   - ENCRYPTION_LABEL: b90b173a1858
+language: php
+php:
+  - '5.6'
+before_script:
+ - composer install
+script: bash ./scripts/gh-page.sh
