@@ -16,21 +16,21 @@ REPO=`git config remote.origin.url`
 SSH_REPO=${REPO/https:\/\/github.com\//git@github.com:}
 SHA=`git rev-parse --verify HEAD`
 
-# Clone the existing gh-pages for this repo into dest/
+# Clone the existing gh-pages for this repo into out/
 # Create a new empty branch if gh-pages doesn't exist yet (should only happen on first deply)
-git clone $REPO dest
+git clone $REPO out
 cd dest
 git checkout $TARGET_BRANCH || git checkout --orphan $TARGET_BRANCH
 cd ..
 
 # Clean dest existing contents
-rm -rf dest/**/* || exit 0
+rm -rf out/**/* || exit 0
 
 # Run our compile script
 npm run spec
 
 # Now let's go have some fun with the cloned repo
-cd dest
+cd out
 git config user.name "Travis CI"
 git config user.email "vijaycs85@gmail.com"
 
