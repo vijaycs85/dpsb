@@ -19,7 +19,7 @@ SHA=`git rev-parse --verify HEAD`
 # Clone the existing gh-pages for this repo into out/
 # Create a new empty branch if gh-pages doesn't exist yet (should only happen on first deply)
 git clone $REPO out
-cd dest
+cd out
 git checkout $TARGET_BRANCH || git checkout --orphan $TARGET_BRANCH
 cd ..
 
@@ -27,7 +27,9 @@ cd ..
 rm -rf out/**/* || exit 0
 
 # Run our compile script
-npm run spec
+php generate.php
+
+cp dest/* out/
 
 # Now let's go have some fun with the cloned repo
 cd out
