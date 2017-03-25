@@ -7,7 +7,7 @@ Drupal Projects Status Board is a way to monitor modules & themes used in your p
 
 ## Design
 
-![Drupal Projects Status Board Control flow](https://cloud.githubusercontent.com/assets/1220029/23928254/a7450d94-0916-11e7-91ef-b6574a50737e.png)
+![Drupal Projects Status Board Control flow](https://cloud.githubusercontent.com/assets/1220029/24326684/84151eac-11ab-11e7-9157-e15ffdf89fc3.png)
 
 ## Motivation
 
