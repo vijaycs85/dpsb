@@ -36,7 +36,10 @@ Note:
 
 ## Demo
 
-Checkout [gh-pages](https://vijaycs85.github.io/dpsb/) of this repository for sample output. Check generated [metadata](https://vijaycs85.github.io/dpsb/project-metadata.json) file for additional details available. Integrated with [TravisCI](https://travis-ci.org/vijaycs85/dpsb) to refresh daily and every push to master.
+Checkout [gh-pages](https://vijaycs85.github.io/dpsb/) of this repository for sample output. Check generated [metadata](https://vijaycs85.github.io/dpsb/project-metadata.json) file for additional details available.
+
+## Refresh
+Integrated with [TravisCI](https://travis-ci.org/vijaycs85/dpsb) to refresh daily and every push to master.
 
 ## Contributors
 
