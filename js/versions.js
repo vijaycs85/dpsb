@@ -50,15 +50,6 @@ function getUrlParameter(name) {
   return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
 };
 
-/**
- * Status formatter.
- *
- * @param value
- * @param row
- * @param index
- * @returns {string}
- * @constructor
- */
 function StatusFormatter(value, row, index) {
   var html = 'Active';
   if (value != 1) {
@@ -67,15 +58,6 @@ function StatusFormatter(value, row, index) {
   return html
 }
 
-/**
- * Formatter for versions.
- *
- * @param value
- * @param row
- * @param index
- * @returns {string}
- * @constructor
- */
 function VersionFormatterUrl(value, row, index) {
   var html = [];
   var cnt = 0;
