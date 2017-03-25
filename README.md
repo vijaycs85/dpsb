@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/vijaycs85/dpsb.svg?branch=master)](https://travis-ci.org/vijaycs85/dpsb)
+
 ## Synopsis
 
 Drupal Projects Status Board is a way to monitor modules & themes used in your project. All data retrieved from [Drupal.org](https://www.drupal.org) using available [APIs](https://www.drupal.org/drupalorg/docs/api).
