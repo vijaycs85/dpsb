@@ -13,7 +13,10 @@ $(function () {
           sortable: true
         }
       ],
-      data: result.metadata
+      data: result.metadata,
+      onPostBody: function () {
+        $('[data-toggle="tooltip"]').tooltip();
+      }
     });
     $('[data-field="updated"]').html($.timeago(result.updated));
   });
@@ -64,10 +67,22 @@ function VersionFormatterUrl(value, row, index) {
   $.each(value, function (versionID, versionData) {
     cnt++;
     if (cnt <= listCount) {
-      html.push('<a href="' + versionData.download_link + '" target="_blank"><span class="btn btn-' + getSecurityStatus(versionData) + ' btn-sm"><span class="glyphicon glyphicon-lock"></span> ' + versionID + '</span></a> ');
+      html.push('<a href="' + versionData.download_link + '" target="_blank" data-toggle="tooltip" data-html="true" title="' + getVersionDetails(versionData) + '"><span class="btn btn-' + getSecurityStatus(versionData) + ' btn-sm"><span class="glyphicon glyphicon-lock"></span> ' + versionID + '</span></a> ');
     }
   });
+
   return html.join('');
+}
+
+/**
+ * Gets Version details for tooltip.
+ *
+ * @param versionData
+ * @returns {string}
+ */
+function getVersionDetails(versionData) {
+  var release_date = new Date(versionData.date * 1000);
+  return release_date.toUTCString();
 }
 
 function getSecurityStatus(versionData) {
