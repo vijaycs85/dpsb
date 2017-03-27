@@ -33,7 +33,15 @@ if (($handle = fopen($data_path . 'projects.csv', 'r')) !== FALSE) {
       $row[$key] = isset($line[$index]) ? $line[$index] : NULL;
     }
     $ts = time();
-    $client->getAdditionalData($row, $conf['core']);
+    try {
+      $client->getAdditionalData($row, $conf['core']);
+    }
+    catch (\Exception $e) {
+      // Additional field for prod URL.
+      console_log("Error while processing !project project (!time)\n", ['!project' => $row['project'], '!time' => (time() - $ts) . 's']);
+      continue;
+    }
+
     // Additional field for prod URL.
     console_log("Processed !project project (!time)\n", ['!project' => $row['project'], '!time' => (time() - $ts) . 's']);
     $rows[] = $row;
